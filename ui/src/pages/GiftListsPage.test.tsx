@@ -1,5 +1,6 @@
 import { render, screen } from '@ari/plugin-sdk/test'
-import { describe, expect, it, vi } from 'vitest'
+import '@testing-library/jest-dom';
+import { describe, it, expect, vi } from 'vitest';
 
 import GiftListsPage from './GiftListsPage'
 

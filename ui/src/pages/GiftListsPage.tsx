@@ -70,7 +70,7 @@ export default function GiftListsPage() {
             </CardContent>
           </Card>
         ) : (
-          giftLists?.map((list) => (
+          giftLists?.map((list: GiftList) => (
             <Card key={list.id} className="group relative overflow-hidden transition-all hover:shadow-md">
               <div onClick={() => handleEdit(list)} className="cursor-pointer">
                 <CardHeader>
@@ -94,7 +94,7 @@ export default function GiftListsPage() {
                   variant="ghost"
                   size="icon"
                   className="h-8 w-8"
-                  onClick={(e) => {
+                  onClick={(e: React.MouseEvent) => {
                     e.stopPropagation()
                     handleEdit(list)
                   }}
@@ -105,7 +105,7 @@ export default function GiftListsPage() {
                   variant="ghost"
                   size="icon"
                   className="h-8 w-8 text-destructive hover:text-destructive"
-                  onClick={(e) => {
+                  onClick={(e: React.MouseEvent) => {
                     e.stopPropagation()
                     setDeleteId(list.id)
                   }}
@@ -148,6 +148,6 @@ export default function GiftListsPage() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </div>
+    </div >
   )
 }

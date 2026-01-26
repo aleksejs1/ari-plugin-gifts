@@ -1,4 +1,4 @@
-import { AxiosError, Icons, useForm, useTranslation,z, zodResolver } from '@ari/plugin-sdk'
+import { AxiosError, Icons, useForm, useTranslation, z, zodResolver } from '@ari/plugin-sdk'
 import { Alert, AlertDescription, AlertTitle, Button, Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, Form, FormControl, FormField, FormItem, FormLabel, FormMessage, Input, Textarea } from '@ari/plugin-sdk'
 import { useEffect, useState } from 'react'
 
@@ -57,8 +57,9 @@ export function GiftListDialog({ open, onOpenChange, listToEdit }: GiftListDialo
       onOpenChange(false)
     } catch (error) {
       console.error('Failed to save gift list', error)
+      console.error('Failed to save gift list', error)
       if (error instanceof AxiosError) {
-        const data = error.response?.data
+        const data = error.response?.data as any
         if (data && typeof data === 'object') {
           // Handle "hydra" error format or standard format
           const description = data.description || data.detail || data['hydra:description']
@@ -110,7 +111,7 @@ export function GiftListDialog({ open, onOpenChange, listToEdit }: GiftListDialo
             <FormField
               control={form.control}
               name="name"
-              render={({ field }) => (
+              render={({ field }: { field: any }) => (
                 <FormItem>
                   <FormLabel>{t('fields.name', 'Name')}</FormLabel>
                   <FormControl>
@@ -124,7 +125,7 @@ export function GiftListDialog({ open, onOpenChange, listToEdit }: GiftListDialo
             <FormField
               control={form.control}
               name="description"
-              render={({ field }) => (
+              render={({ field }: { field: any }) => (
                 <FormItem>
                   <FormLabel>{t('fields.description', 'Description')}</FormLabel>
                   <FormControl>
@@ -138,7 +139,7 @@ export function GiftListDialog({ open, onOpenChange, listToEdit }: GiftListDialo
             <FormField
               control={form.control}
               name="eventDate"
-              render={({ field }) => (
+              render={({ field }: { field: any }) => (
                 <FormItem>
                   <FormLabel>{t('fields.eventDate', 'Event Date')}</FormLabel>
                   <FormControl>

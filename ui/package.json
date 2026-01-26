@@ -1,5 +1,5 @@
 {
-    "name": "@crm-plugins/gift-plugin",
+    "name": "@ari-plugins/gift-plugin",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
@@ -19,7 +19,7 @@
         "@types/node": "^24.10.1",
         "@types/react": "^19.2.5",
         "@types/react-dom": "^19.2.3",
-        "@ari/eslint-config": "*",
+        "@testing-library/jest-dom": "^6.4.2",
         "typescript": "~5.3.3",
         "vite": "^4.5.3",
         "vitest": "^0.34.6"
