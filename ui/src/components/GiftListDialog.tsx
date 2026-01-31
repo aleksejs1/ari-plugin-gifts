@@ -1,5 +1,5 @@
-import { AxiosError, Icons, useForm, useTranslation, z, zodResolver } from '@ari/plugin-sdk'
-import { Alert, AlertDescription, AlertTitle, Button, Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, Form, FormControl, FormField, FormItem, FormLabel, FormMessage, Input, Textarea } from '@ari/plugin-sdk'
+import { AxiosError, Icons, useForm, useTranslation, z, zodResolver } from '@personal-ari/plugin-sdk'
+import { Alert, AlertDescription, AlertTitle, Button, Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, Form, FormControl, FormField, FormItem, FormLabel, FormMessage, Input, Textarea } from '@personal-ari/plugin-sdk'
 import { useEffect, useState } from 'react'
 
 import { useCreateGiftList, useUpdateGiftList } from '../hooks/useGiftLists'

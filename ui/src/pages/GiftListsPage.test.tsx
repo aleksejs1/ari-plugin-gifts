@@ -1,4 +1,4 @@
-import { render, screen } from '@ari/plugin-sdk/test'
+import { render, screen } from '@personal-ari/plugin-sdk/test'
 import '@testing-library/jest-dom';
 import { describe, it, expect, vi } from 'vitest';
 

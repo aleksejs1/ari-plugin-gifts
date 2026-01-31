@@ -1,4 +1,4 @@
-import { Icons, Router, useTranslation } from '@ari/plugin-sdk'
+import { Icons, Router, useTranslation } from '@personal-ari/plugin-sdk'
 
 const { Link } = Router
 

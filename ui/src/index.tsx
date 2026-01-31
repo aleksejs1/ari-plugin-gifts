@@ -1,6 +1,6 @@
 import './index.css'
 
-import { BasePlugin, type PluginContext, setSdkApi } from '@ari/plugin-sdk'
+import { BasePlugin, type PluginContext, setSdkApi } from '@personal-ari/plugin-sdk'
 import { lazy, Suspense } from 'react'
 
 import { GiftTopMenuItem } from './components/GiftTopMenuItem'

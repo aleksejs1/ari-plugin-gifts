@@ -1,4 +1,4 @@
-import { Skeleton } from '@ari/plugin-sdk'
+import { Skeleton } from '@personal-ari/plugin-sdk'
 
 export function PageLoader() {
   return (

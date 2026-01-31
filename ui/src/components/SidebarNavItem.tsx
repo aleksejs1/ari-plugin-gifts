@@ -1,4 +1,4 @@
-import { cn,Router } from '@ari/plugin-sdk'
+import { cn,Router } from '@personal-ari/plugin-sdk'
 
 const { Link } = Router
 

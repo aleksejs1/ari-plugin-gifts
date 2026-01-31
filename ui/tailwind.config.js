@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import sharedPreset from '@ari/plugin-sdk/tailwind.preset'
+import sharedPreset from '@personal-ari/plugin-sdk/tailwind.preset'
 
 export default {
     presets: [sharedPreset],

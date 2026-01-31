@@ -1,4 +1,4 @@
-import { http,Query } from '@ari/plugin-sdk'
+import { http,Query } from '@personal-ari/plugin-sdk'
 
 
 const { useMutation, useQuery, useQueryClient } = Query

@@ -1,4 +1,4 @@
-import { createPluginConfig } from '@ari/plugin-sdk/build/vite';
+import { createPluginConfig } from '@personal-ari/plugin-sdk/build/vite';
 import path from 'path';
 
 export default createPluginConfig('GiftPlugin', import.meta.url, {}, {
