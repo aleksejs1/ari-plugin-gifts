@@ -2,7 +2,7 @@
 
 namespace Plugins\GiftPlugin\Tests\Functional;
 
-use App\Tests\Functional\AbstractApiTestCase;
+use Ari\Tests\Functional\AbstractApiTestCase;
 
 class GiftListReproductionTest extends AbstractApiTestCase
 {

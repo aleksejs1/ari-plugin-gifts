@@ -3,15 +3,15 @@
 namespace Plugins\GiftPlugin\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
-use App\Security\TenantAwareInterface;
-use App\Security\TenantAwareTrait;
+use Ari\Security\TenantAwareInterface;
+use Ari\Security\TenantAwareTrait;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'plg_gift_list')]
-#[ApiResource(processor: \App\State\UserOwnerProcessor::class)]
+#[ApiResource(processor: \Ari\State\UserOwnerProcessor::class)]
 class GiftList implements TenantAwareInterface
 {
     use TenantAwareTrait;
