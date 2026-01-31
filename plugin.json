@@ -1,0 +1,19 @@
+{
+  "name": "gift-plugin",
+  "version": "1.0.0",
+  "displayName": "Gift Management",
+  "description": "Manage gift ideas for contacts",
+  "author": "Ari Team",
+  "frontend": {
+    "enabled": true,
+    "entry": "ui/dist/gift-plugin.js",
+    "devUrl": null
+  },
+  "backend": {
+    "enabled": true,
+    "bundle": "Plugins\\GiftPlugin\\GiftPlugin"
+  },
+  "require": {
+    "ari/core": "^0.1.0"
+  }
+}
