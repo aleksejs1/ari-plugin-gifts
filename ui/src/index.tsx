@@ -3,7 +3,7 @@ import './index.css'
 import { BasePlugin, type PluginContext, setSdkApi } from '@personal-ari/plugin-sdk'
 import { lazy, Suspense } from 'react'
 
-import { GiftTopMenuItem } from './components/GiftTopMenuItem'
+import { GiftSidebarItem } from './components/GiftSidebarItem'
 import { PageLoader } from './components/PageLoader'
 import en from './locales/en.json'
 import ru from './locales/ru.json'
@@ -30,12 +30,12 @@ export default class GiftPlugin extends BasePlugin {
       ),
     })
 
-    // 2. Register Top Menu Section
-    const { topMenuRegistry } = context
-    if (topMenuRegistry) {
-      topMenuRegistry.register({
+    // 2. Register Sidebar Section
+    const { sidebarRegistry } = context
+    if (sidebarRegistry) {
+      sidebarRegistry.register({
         id: 'gifts',
-        component: GiftTopMenuItem,
+        component: GiftSidebarItem,
         order: 10,
       })
     }
